@@ -1,0 +1,22 @@
+ACB -> -2.25%. Profit: -2.565.000 VND. Original price: 114.165.000 VND. Current price: 111.600.000 VND
+
+MBB -> -1.29%. Profit: -928.000 VND. Original price: 71.978.000 VND. Current price: 71.050.000 VND
+
+KDH -> -1.26%. Profit: -714.000 VND. Original price: 56.729.000 VND. Current price: 56.015.000 VND
+
+BDG -> 0.43%. Profit: 240.000 VND. Original price: 55.600.000 VND. Current price: 55.840.000 VND
+
+TCB -> -1.43%. Profit: -510.000 VND. Original price: 35.760.000 VND. Current price: 35.250.000 VND
+
+Available Cash: 2.221.000 VND.
+
+======================================
+Original asset: 336.453.000 VND.
+Current asset: 331.976.000 VND.
+Profit: -4.477.000 -> -1.33%
+
+
+Last updated at 2024-11-05 14:16:35.629848
+
+
+An investment in knowledge pays the best interest. - Benjamin Franklin
