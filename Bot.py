@@ -12,7 +12,7 @@ logging.basicConfig(
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="To begin, type /initiate. Next you can you /chart or /report to get insight of your investment")
 async def chart(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_photo(chat_id=update.effective_chat.id, photo=open("C:/Users/Admin/Desktop/piechart.png", 'rb'))
+    await context.bot.send_photo(chat_id=update.effective_chat.id, photo=open("piechart.png", 'rb'))
 async def report(update: Update, context: ContextTypes.DEFAULT_TYPE):
     with open("C:/Users/Admin/Desktop/report.txt", 'r') as file:
         content = file.read()
@@ -23,7 +23,7 @@ async def initiate(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def news(update: Update, context = ContextTypes.DEFAULT_TYPE):
     stockoperation.news()
-    with open('C:/Users/Admin/Desktop/news.txt', 'r', encoding='utf-8') as file:
+    with open('news.txt', 'r', encoding='utf-8') as file:
         content = file.read()
     await context.bot.send_message(chat_id=update.effective_chat.id, text = content)
 if __name__ == '__main__':
