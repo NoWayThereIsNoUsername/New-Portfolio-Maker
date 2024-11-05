@@ -6,8 +6,8 @@ import numpy as np
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import csv
-df = pd.read_csv('C:/Users/Admin/Desktop/stock.csv')
-file = open('C:/Users/Admin/Desktop/pricedata.csv', 'a')
+df = pd.read_csv('stock.csv')
+file = open('pricedata.csv', 'a')
 
 plot_itemName_list = []
 stockName_only = []
@@ -162,7 +162,7 @@ def mainControl():
 
       # Replace with your actual saved date
 
-    filedate = open('C:/Users/Admin/Desktop/dateyesterday.txt', 'r+')
+    filedate = open('dateyesterday.txt', 'r+')
     last_check = filedate.read()
     now = datetime.now()
     dateformat = "%Y-%m-%d"
@@ -171,7 +171,7 @@ def mainControl():
 
     
     if now - date_time_obj >= timedelta(days=1):
-        file = open('C:/Users/Admin/Desktop/pricedata.csv', 'a', newline='')
+        file = open('pricedata.csv', 'a', newline='')
         filedate.seek(0)
         filedate.truncate()
         filedate.write(str(now.date()))
@@ -186,7 +186,7 @@ def mainControl():
     
     current_time = datetime.now()
     
-    with open('C:/Users/Admin/Desktop/report.txt', "w") as file:
+    with open('report.txt', "w") as file:
         for names in itemName_without_cash:
             file.write(names + " -> " + str("{:,}".format(priceDiffPercent[write_counter]).replace(",", ".")) + "%. Profit: " + str("{:,}".format(priceDiff[write_counter]).replace(",", ".")) + " VND. Original price: " + str("{:,}".format(round(ogPriceAll[write_counter])).replace(",", ".")) + " VND. Current price: " + str("{:,}".format(itemData_list_without_cash[write_counter]).replace(",", ".")) + " VND\n\n")
             write_counter += 1
